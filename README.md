@@ -79,3 +79,6 @@ npm install npm run build
 
 ## 7. Run Laravel server
 composer run dev
+
+## DOM PDF
+composer require barryvdh/laravel-dompdf
