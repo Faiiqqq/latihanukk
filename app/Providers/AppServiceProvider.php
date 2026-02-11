@@ -22,13 +22,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('layout.dashboard', function ($view) {
-            $peminjamen = Peminjaman::with(['user', 'alat'])->get();
+
+            $pending = Peminjaman::with(['user', 'alat'])
+                ->where('status', 'menunggu') // atau pending
+                ->latest()
+                ->get();
+
             $view->with([
-                'totalAlat'     => Alat::sum('jumlah'),   // total stok
-                'totalJenis'    => Alat::count(),         // jumlah jenis alat
+                'totalAlat'     => Alat::sum('jumlah'),
                 'totalKategori' => Kategori::count(),
                 'totalUser'     => User::count(),
-                'peminjamen' => $peminjamen
+                'peminjamen'    => $pending,
+                'totalPending'  => $pending->count()
             ]);
         });
     }

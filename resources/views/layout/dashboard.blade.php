@@ -16,9 +16,9 @@
 
     {{-- Jumlah Jenis Alat --}}
     <div class="bg-white p-6 rounded-2xl shadow-sm">
-        <p class="text-sm text-gray-500">Jenis Alat</p>
+        <p class="text-sm text-gray-500">Pending</p>
         <h2 class="text-3xl font-bold text-green-600 mt-2">
-            {{ $totalJenis }}
+            {{ $totalPending }}
         </h2>
     </div>
 

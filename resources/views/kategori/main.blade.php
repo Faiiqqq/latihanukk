@@ -24,7 +24,6 @@
                 <tr>
                     <th class="px-6 py-4 text-left">NO</th>
                     <th class="px-6 py-4 text-left">Nama</th>
-                    <th class="px-6 py-4">Jumlah Alat</th>
                     <th class="px-6 py-4">Aksi</th>
                 </tr>
             </thead>
@@ -33,7 +32,6 @@
                     <tr class="hover:bg-gray-50">
                         <td class="px-6 py-4">{{ $loop->iteration }}</td>
                         <td class="px-6 py-4">{{ $k->nama }}</td>
-                        <td class="px-6 py-4 text-center space-x-2">{{ $k->alats_sum_jumlah ?? 0 }}</td>
                         <td class="px-6 py-4 text-center space-x-2">
 
                             <a href="/kategori/{{ $k->id_kategori }}/edit" class="text-blue-600 hover:underline">

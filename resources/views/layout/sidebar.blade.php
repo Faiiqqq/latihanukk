@@ -27,6 +27,11 @@
                 text-gray-700 hover:bg-gray-200 transition">
                 Pengembalian
             </a>
+            <a href="/kategori"
+                class="flex items-center px-4 py-2 rounded-lg
+                text-gray-700 hover:bg-gray-200 transition">
+                Kategori
+            </a>
             <a href="/alat"
                 class="flex items-center px-4 py-2 rounded-lg
                 text-gray-700 hover:bg-gray-200 transition">
@@ -62,6 +67,11 @@
                 class="flex items-center px-4 py-2 rounded-lg
                 text-gray-700 hover:bg-gray-200 transition">
                 Peminjaman
+            </a>
+            <a href="/kategori"
+                class="flex items-center px-4 py-2 rounded-lg
+                text-gray-700 hover:bg-gray-200 transition">
+                Kategori
             </a>
             <a href="/alat"
                 class="flex items-center px-4 py-2 rounded-lg
