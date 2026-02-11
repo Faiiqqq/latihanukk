@@ -27,6 +27,11 @@
                 text-gray-700 hover:bg-gray-200 transition">
                 Pengembalian
             </a>
+            <a href="/alat"
+                class="flex items-center px-4 py-2 rounded-lg
+                text-gray-700 hover:bg-gray-200 transition">
+                Alat
+            </a>
             <a href="/activity-log"
                 class="flex items-center px-4 py-2 rounded-lg
                 text-gray-700 hover:bg-gray-200 transition">
